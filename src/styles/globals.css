@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  src: url('./../../public/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-display: swap;
 
@@ -17,6 +17,7 @@ body{
   margin: 0;
   font-family: 'Outfit', sans-serif;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +30,8 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   background-color: var(--White);
   border-radius: 25px;
   padding: 20px;
@@ -56,6 +58,36 @@ h2{
   font-size: 20px;
   margin: 0 15px 27px 15px;
   text-align: center;
+}
+@media (max-width: 376px) {
+  main{
+    margin: 28px;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .main-image img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .main-header{
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+    line-height: 170%;
+    letter-spacing: -0.09px;
+
+  }
+  h2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .main-paragraph p{
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.09px;
+  }
 }
 .hidden{
   display: none;
