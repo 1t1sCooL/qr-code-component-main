@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 export default function QRHead() {
-  const { basePath } = useRouter();
+  // const { basePath } = useRouter();
 
   return (
     <Head>
@@ -11,8 +11,8 @@ export default function QRHead() {
       <link
         rel="icon"
         type="image/png"
-        href={`${basePath}/favicon-32x32.png`}
-        //   href='/favicon-32x32.png'
+        // href={`${basePath}/favicon-32x32.png`}
+        href="/favicon-32x32.png"
       />
       <title>Frontend Mentor | QR code component</title>
     </Head>

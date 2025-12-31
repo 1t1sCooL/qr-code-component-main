@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/QRCodeComponent",
+  // basePath: "/QRCodeComponent",
 };
 
 export default nextConfig;
